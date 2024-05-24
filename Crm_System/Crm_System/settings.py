@@ -16,12 +16,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 # Allowed hosts
-ALLOWED_HOSTS = [
-    '.vercel.app',
-    '127.0.0.1',
-    'localhost', 
-    '.now.sh'
-]
+ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost', '.now.sh']
+
 
 # Application definition
 INSTALLED_APPS = [
@@ -96,6 +92,8 @@ USE_TZ = True
 # Static files
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
