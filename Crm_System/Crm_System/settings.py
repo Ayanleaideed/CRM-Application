@@ -7,11 +7,15 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 load_dotenv()
+env = environ.Env()
+environ.Env.read_env() 
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-SECRET_KEY = os.environ.get('SECRET_KEY')
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-pki6d@d_f%py^_45e01d4yxhusvg9q*9kxsowg_=-m52mhdi(v'
+
+
 DEBUG = True
 
 ALLOWED_HOSTS = [
@@ -69,6 +73,9 @@ env = environ.Env()
 environ.Env.read_env()
 
 # Database configuration
+# DATABASES = {
+#     'default': env.db('POSTGRES_URL'),
+# }
 DATABASES = {
     'default': env.db('POSTGRES_URL'),
 }
