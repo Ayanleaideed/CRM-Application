@@ -69,16 +69,19 @@ WSGI_APPLICATION = "Crm_System.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-env = environ.Env()
-environ.Env.read_env()
+
 
 # Database configuration
 # DATABASES = {
 #     'default': env.db('POSTGRES_URL'),
 # }
+# DATABASES = {
+#     'default': env.db('POSTGRES_URL'),
+# }
 DATABASES = {
-    'default': env.db('POSTGRES_URL'),
+    'default': None,
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
