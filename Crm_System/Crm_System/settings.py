@@ -72,14 +72,8 @@ WSGI_APPLICATION = "Crm_System.wsgi.application"
 
 
 # Database configuration
-# DATABASES = {
-#     'default': env.db('POSTGRES_URL'),
-# }
-# DATABASES = {
-#     'default': env.db('POSTGRES_URL'),
-# }
 DATABASES = {
-    'default': None,
+    'default': env.db('POSTGRES_URL'),
 }
 
 
