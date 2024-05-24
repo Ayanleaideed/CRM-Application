@@ -12,6 +12,9 @@ import environ
 import os
 
 load_dotenv()
+env = environ.Env()
+environ.Env.read_env() 
+
 
 def login_user(request):
     if request.method == 'POST':
@@ -62,8 +65,8 @@ def register(request):
 
         if mode == 'admin':
             # print(adminAuth(request, admin_name, admin_password))
-            print(os.environ.get('admin_code'))
-            if  admin_password == os.environ.get('admin_code'):
+            env.db('POSTGRES_URL')
+            if  admin_password == env.db('admin_code'):
                 try:
                     user = User.objects.create_user(username=username, password=password)
                 except:
