@@ -7,11 +7,10 @@ from .models import Customer, UserInfo, logHistory, authenticationInfo
 from . import models
 from django.core.exceptions import ObjectDoesNotExist
 from .utils import detect_changes
-from dotenv import load_dotenv
 import environ
 import os
 
-load_dotenv()
+
 env = environ.Env()
 environ.Env.read_env() 
 
