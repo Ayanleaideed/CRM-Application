@@ -1,0 +1,37 @@
+[33mcd92d8e[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m .update setting .config
+[33mbe2c8a2[m .update setting .config
+[33m7817130[m .update setting .config
+[33mf0c13e5[m .update setting .config
+[33mc4f2578[m .update setting .config
+[33m7d8ce19[m .update setting .config
+[33m7254abd[m .update setting .config
+[33m4e27924[m .vercel update config
+[33m859c041[m .vercel update config
+[33m7b6a172[m Fix deployment configuration
+[33m1616d62[m Troubleshooting
+[33m9120179[m Troubleshooting
+[33mbd3828c[m Add .gitattributes to manage line endings
+[33ma53384b[m Troubleshooting
+[33m3ebd9e8[m Update .vercel.json
+[33m857babf[m Remove unnecessary staticfiles/admin directory and adjust settings
+[33m4564272[m Remove unnecessary staticfiles/admin directory and adjust settings
+[33m35dbbb0[m Remove staticfiles/admin directory
+[33medc089a[m Deployment failed Troubleshoot
+[33m56e8688[m Deployment failed Troubleshoot
+[33m1211778[m Configure consistent line endings with .gitattributes
+[33m1bf4deb[m Deployment failed Troubleshoot
+[33mf377dce[m Deployment failed Troubleshoot
+[33m0fbdba7[m Deployment failed Troubleshoot
+[33m2290991[m Deployment failed fix
+[33m02c5df2[m Deployment failed fix
+[33mf332962[m Deployment failed fix
+[33ma17bc38[m Deployment failed fix
+[33ma23e042[m Deployment failed fix
+[33m91bcf56[m add static files
+[33m15764b6[m add static files
+[33mebcdb48[m added requirements.txt
+[33mba86813[m Initial commit: Complete implementation of the Django project including models, views, forms, and templates. Added .gitignore. Prepared project for deployment.
+[33m56b46b4[m Update README.md
+[33mc45f88f[m Update README.md
+[33m2029139[m Update README.md
+[33m37749c6[m Initial commit
