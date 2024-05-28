@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import environ
 
 # Load environment variables
-load_dotenv()
+
 
 # Base directory
 BASE_DIR = Path(__file__).resolve().parent.parent
