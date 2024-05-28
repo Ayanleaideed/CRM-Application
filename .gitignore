@@ -6,6 +6,7 @@
 .DS_Store
 # Ignore environment-specific settings
 *.env
+Crm_System/staticfiles/
 
 
 # Ignore IDE and text editor files
