@@ -63,9 +63,7 @@ def register(request):
         admin_name = request.POST.get('adminName')
 
         if mode == 'admin':
-            # print(adminAuth(request, admin_name, admin_password))
-            env.db('POSTGRES_URL')
-            if  admin_password == env.db('admin_code'):
+            if  admin_password == os.getenv('admin_code'):
                 try:
                     user = User.objects.create_user(username=username, password=password)
                 except:
