@@ -19,8 +19,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '.vercel.app',
     '127.0.0.1',
-    'localhost', 
-    '.now.sh'
 ]
 
 # Application definition
@@ -68,7 +66,7 @@ WSGI_APPLICATION = 'Crm_System.wsgi.application'
 env = environ.Env()
 environ.Env.read_env()
 DATABASES = {
-    'default': env.db('POSTGRES_URL'),
+    'default': env.db('POSTGRES_URL', default="postgres://default:mHY8vWQkji1o@ep-plain-sunset-a5szj89r.us-east-2.aws.neon.tech:5432/verceldb?sslmode=require"),
 }
 
 # Password validation
