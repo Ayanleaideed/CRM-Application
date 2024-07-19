@@ -65,7 +65,7 @@ WSGI_APPLICATION = 'Crm_System.wsgi.application'
 env = environ.Env()
 environ.Env.read_env()
 DATABASES = {
-    'default': env.db('POSTGRES_URL', default="postgres://default:mHY8vWQkji1o@ep-plain-sunset-a5szj89r.us-east-2.aws.neon.tech:5432/verceldb?sslmode=require"),
+    'default': env.db('POSTGRES_URL', default=""),
 }
 
 # Password validation
